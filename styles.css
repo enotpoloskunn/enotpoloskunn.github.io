@@ -2,7 +2,7 @@ form {
     background-color: #ffffff; /* Белый фон */
     border-radius: 10px; /* Скругление углов */
     padding: 20px; /* Внутренний отступ */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /* Улучшенная тень */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12); /* Улучшенная тень */
     max-width: 480px; /* Чуть уже */
     margin: 25px auto; /* Центрирование */
     display: flex;
@@ -22,7 +22,7 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     border: 1px solid #bbb;
     border-radius: 6px; /* Меньше скругление */
     font-size: 15px;
@@ -57,7 +57,7 @@ button:hover {
 :root {
     --btn-primary-color-bg: #282828 !important; /* Черный фон */
     --btn-primary-color-text: #ffffff !important; /* Белый текст */
-	--btn-primary-color-bg-hover: #232323 !important;
+	--btn-primary-color-bg-hover: #353535 !important;
 }
 
 .text-md-right {
@@ -68,13 +68,44 @@ button:hover {
 input,
 select,
 textarea {
-    border-radius: 12px !important;
+    border-radius: 20px !important;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-    border-color: #232323 !important;
+    border-color: #353535 !important;
     box-shadow: 0 0 4px rgba(35, 35, 35, 0.3) !important;
     outline: none !important;
+}
+
+.col-form-label {
+    margin-bottom: 0;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+input, select, textarea {
+    width: 100%; /* Растянет поля ввода на всю доступную ширину */
+    max-width: 100%; /* Чтобы не выходило за пределы контейнера */
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Регулирует расстояние между текстом и полем */
+}
+
+.form-group label {
+    min-width: 120px; /* Установите фиксированную ширину меток */
+    text-align: left; /* Выровнять текст по левому краю */
+}
+
+.form-group input, .form-group select {
+    flex-grow: 1; /* Заставит поля занимать всю доступную ширину */
+}
+
+label {
+    margin-bottom: 2px; /* Уменьшает расстояние между меткой и полем */
 }
