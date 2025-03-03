@@ -98,3 +98,28 @@ select {
   color: #232323; /* Цвет текста */
   border: 1px solid #232323; /* Цвет границы */
   padding: 8px; /* Внутренние отступы */
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Размещаем элементы в колонку */
+  align-items: flex-start; /* Выравниваем текст по левому краю */
+}
+
+label {
+  margin-bottom: 5px; /* Добавляем отступ между лейблом и полем */
+  font-weight: 500; /* Делаем текст чуть жирнее */
+}
+input,
+select,
+textarea {
+  width: 80%; /* Ширина 80% */
+  max-width: 100%; /* Чтобы не выходило за границы формы */
+  padding: 10px; /* Увеличиваем отступы внутри */
+  border-radius: 8px; /* Закругляем углы */
+  border: 1px solid #232323; /* Цвет границы */
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
