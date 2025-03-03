@@ -24,7 +24,7 @@ textarea {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #bbb;
-    border-radius: 6px; /* Меньше скругление */
+    border-radius: 20px !important;
     font-size: 15px;
     transition: all 0.2s ease-in-out;
 }
@@ -57,7 +57,7 @@ button:hover {
 :root {
     --btn-primary-color-bg: #282828 !important; /* Черный фон */
     --btn-primary-color-text: #ffffff !important; /* Белый текст */
-	--btn-primary-color-bg-hover: #353535 !important;
+  --btn-primary-color-bg-hover: #353535 !important;
 }
 
 .text-md-right {
@@ -84,28 +84,3 @@ textarea:focus {
     font-size: inherit;
     font-weight: 500;
     line-height: 1.1;
-}
-
-input, select, textarea {
-    width: 100%; /* Растянет поля ввода на всю доступную ширину */
-    max-width: 100%; /* Чтобы не выходило за пределы контейнера */
-}
-
-.form-group {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Регулирует расстояние между текстом и полем */
-}
-
-.form-group label {
-    min-width: 120px; /* Установите фиксированную ширину меток */
-    text-align: left; /* Выровнять текст по левому краю */
-}
-
-.form-group input, .form-group select {
-    flex-grow: 1; /* Заставит поля занимать всю доступную ширину */
-}
-
-label {
-    margin-bottom: 2px; /* Уменьшает расстояние между меткой и полем */
-}
