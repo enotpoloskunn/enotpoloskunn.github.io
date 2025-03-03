@@ -53,3 +53,8 @@ button:hover {
     background-color: #1a1a1a;
     transform: scale(1.02);
 }
+
+:root {
+    --btn-primary-color-bg: #000000 !important; /* Черный фон */
+    --btn-primary-color-text: #ffffff !important; /* Белый текст */
+}
