@@ -5,9 +5,6 @@ form {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /* Улучшенная тень */
     max-width: 480px; /* Чуть уже */
     margin: 25px auto; /* Центрирование */
-}
-
-form {
     display: flex;
     flex-direction: column;
 }
@@ -16,6 +13,8 @@ label {
     font-weight: 600;
     margin-bottom: 5px;
     color: #333;
+    text-align: left; /* Выравнивание текста меток по левому краю */
+    display: block; /* Чтобы метка была над полем ввода */
 }
 
 input,
@@ -39,7 +38,7 @@ textarea:focus {
 }
 
 button {
-    background-color: #282828;
+    background-color: #000000; /* Измененный цвет кнопки на черный */
     color: #fff;
     padding: 10px;
     border: none;
@@ -51,6 +50,6 @@ button {
 }
 
 button:hover {
-    background-color: #3a3a3a;
+    background-color: #1a1a1a;
     transform: scale(1.02);
 }
