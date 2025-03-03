@@ -38,7 +38,7 @@ textarea:focus {
 }
 
 button {
-    background-color: #000000; /* Измененный цвет кнопки на черный */
+    background-color: #282828; /* Измененный цвет кнопки на черный */
     color: #fff;
     padding: 10px;
     border: none;
@@ -55,6 +55,10 @@ button:hover {
 }
 
 :root {
-    --btn-primary-color-bg: #000000 !important; /* Черный фон */
+    --btn-primary-color-bg: #282828 !important; /* Черный фон */
     --btn-primary-color-text: #ffffff !important; /* Белый текст */
+}
+
+.text-md-right {
+    text-align: left !important;
 }
