@@ -62,3 +62,10 @@ button:hover {
 .text-md-right {
     text-align: left !important;
 }
+
+/* Скругление углов у полей ввода */
+input,
+select,
+textarea {
+    border-radius: 5px !important;
+}
