@@ -84,3 +84,17 @@ textarea:focus {
     font-size: inherit;
     font-weight: 500;
     line-height: 1.1;
+
+@media (min-width: 768px) {
+	.col-md-3 {
+        flex: 0 0 35%;  /* Увеличиваем ширину */
+        max-width: 35%; /* Чтобы колонка стала шире */
+    }
+}
+
+select {
+  background-color: #fff;  /* Сделать цвет фона как у формы */
+  border-radius: 8px;
+  color: #232323; /* Цвет текста */
+  border: 1px solid #232323; /* Цвет границы */
+  padding: 8px; /* Внутренние отступы */
