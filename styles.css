@@ -7,7 +7,7 @@
 
 form {
     background-color: #ffffff; /* Белый фон */
-    border-radius: 10px; /* Скругление углов */
+    border-radius: 20px; /* Скругление углов */
     padding: 20px; /* Внутренний отступ */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12); /* Улучшенная тень */
     max-width: 480px; /* Чуть уже */
@@ -19,7 +19,7 @@ form {
 /* Метки всегда над полями */
 label {
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
     color: #333;
     text-align: left !important; /* Выравнивание влево */
     display: block; /* Блочный элемент */
