@@ -59,9 +59,8 @@ button {
 }
 
 button:hover {
-    background-color: #D8D8D8;
+    background-color: #d8d8d8;
     transform: scale(1.02);
-	border-radius: 30px;
 }
 
 /* Исправленное выравнивание в десктопе */
@@ -93,24 +92,6 @@ button:hover {
     color: white !important; /* Белый текст */
 }
 
-.iti__country {
-    color: #282828 !important;
-}
-
-.iti__country.iti__highlight {
-    color: #282828 !important;
-}
-
-.iti__country_list {
-    color: #282828 !important;
-}
-
-.iti__country a, 
-.iti__country span, 
-.iti__country div {
-    color: #282828 !important;
-}
-
 /* Поля ввода */
 input,
 select {
@@ -123,28 +104,6 @@ select {
     color: #333;
     outline: none;
     font-family: 'Noto Sans', sans-serif;
-}
-.form-group .form-inline {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.col-md-9 {
-    flex-grow: 1;
-    width: 100%;
-    max-width: 100%;
-}
-
-.form-group.row {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.form-group .col-md-9 {
-    padding: 0 !important;
-    margin: 0 !important;
 }
 /* Стили для select */
 .custom-select {
