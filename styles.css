@@ -6,14 +6,11 @@
 }
 
 form {
-    background-color: #ffffff; /* Белый фон */
-    border-radius: 10px; /* Скругление углов */
-    padding: 20px; /* Внутренний отступ */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12); /* Улучшенная тень */
-    max-width: 480px; /* Чуть уже */
-    margin: 25px auto; /* Центрирование */
-    display: flex;
-    flex-direction: column;
+    max-width: 480px; /* Ограничение ширины */
+    width: 100%; /* Убедимся, что форма не выходит за пределы */
+    margin: 25px auto; /* Центрируем */
+    padding: 20px;
+    box-sizing: border-box; /* Включаем padding в расчёт ширины */
 }
 
 /* Метки всегда над полями */
@@ -30,13 +27,14 @@ label {
 input,
 select,
 textarea {
-    width: 80%;
+    width: 100%; /* Растягиваем поля на всю ширину родителя */
+    max-width: 100%; /* Гарантия, что не выйдет за границы */
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #bbb;
-    border-radius: 20px !important;
+    border-radius: 10px;
     font-size: 15px;
-    transition: all 0.2s ease-in-out;
+    box-sizing: border-box; /* Учитываем padding в расчете ширины */
 }
 
 input:focus,
