@@ -2,7 +2,7 @@
 
 /* Применение шрифта ко всей форме */
 .mform {
-  font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 form {
@@ -16,23 +16,20 @@ form {
     flex-direction: column;
 }
 
-/* Метки всегда над полями */
-label {
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: #333;
-    text-align: left !important; /* Выравнивание влево */
-    display: block; /* Блочный элемент */
-    width: 100%; /* Растягиваем на всю ширину */
+/* Обертка для поля ввода и кнопки */
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-/* Поля ввода */
+/* Поле ввода */
 input,
 select,
 textarea {
-    width: 100%;
+    flex-grow: 1; /* Растягивается на всю доступную ширину */
     padding: 10px;
-    margin-bottom: 20px;
     border: 1px solid #bbb;
     border-radius: 20px !important;
     font-size: 15px;
@@ -47,16 +44,18 @@ textarea:focus {
     outline: none;
 }
 
+/* Кнопка */
 button {
     background-color: #282828; /* Черный цвет кнопки */
     color: #fff;
-    padding: 10px;
+    padding: 10px 15px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
     transition: background 0.3s ease, transform 0.2s ease;
+    margin-left: 10px; /* Добавляем отступ от поля ввода */
 }
 
 button:hover {
@@ -93,18 +92,10 @@ button:hover {
     color: white !important; /* Белый текст */
 }
 
-/* Стили для раскрытого списка (опций) */
-.custom-select option {
-    background: #fff; /* Фон опций */
-    color: #333; /* Цвет текста */
-    padding: 10px;
-    font-size: 16px;
-}
-
 /* Поля ввода */
 input,
 select {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #232323;
