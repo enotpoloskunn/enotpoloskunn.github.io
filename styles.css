@@ -61,7 +61,7 @@ button {
 button:hover {
     background-color: #D8D8D8;
     transform: scale(1.02);
-	border-radius: 6px;
+	border-radius: 50px;
 }
 
 /* Исправленное выравнивание в десктопе */
