@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap');
 
-/* Основные стили формы */
+/* Применение шрифта ко всей форме */
 .mform {
   font-family: 'Noto Sans', sans-serif;
 }
@@ -14,32 +14,29 @@ form {
     margin: 25px auto; /* Центрирование */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Центрируем элементы */
 }
 
-/* Метки */
+/* Метки всегда над полями */
 label {
     font-weight: 600;
-    margin-bottom: 4px; /* Отступ между текстом и полем */
-    margin-top: 12px; /* Отступ сверху */
+    margin-bottom: 5px;
     color: #333;
-    text-align: left !important;
-    display: block;
-    width: 100%;
+    text-align: left !important; /* Выравнивание влево */
+    display: block; /* Блочный элемент */
+    width: 100%; /* Растягиваем на всю ширину */
 }
 
 /* Поля ввода */
 input,
 select,
 textarea {
-    width: 100%; /* Растягиваем поля на всю ширину контейнера */
-    max-width: 100%;
+    width: 100%;
     padding: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     border: 1px solid #bbb;
-    border-radius: 10px;
+    border-radius: 20px !important;
     font-size: 15px;
-    box-sizing: border-box; /* Учитываем padding */
+    transition: all 0.2s ease-in-out;
 }
 
 input:focus,
@@ -50,9 +47,8 @@ textarea:focus {
     outline: none;
 }
 
-/* Кнопка */
 button {
-    background-color: #282828;
+    background-color: #282828; /* Черный цвет кнопки */
     color: #fff;
     padding: 10px;
     border: none;
@@ -61,7 +57,6 @@ button {
     font-size: 16px;
     font-weight: bold;
     transition: background 0.3s ease, transform 0.2s ease;
-    width: 100%;
 }
 
 button:hover {
@@ -69,71 +64,53 @@ button:hover {
     transform: scale(1.02);
 }
 
-/* Исправленное выравнивание */
+/* Исправленное выравнивание в десктопе */
+:root {
+    --btn-primary-color-bg: #282828 !important;
+    --btn-primary-color-text: #ffffff !important;
+    --btn-primary-color-bg-hover: #353535 !important;
+}
+
 .text-md-right {
     text-align: left !important;
 }
 
-/* Градиент под стрелку в select */
-.custom-select {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
-    padding-right: 35px;
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-}
-
-/* Медиа-запрос для десктопа */
+/* Правка структуры формы для одинакового отображения */
 @media (min-width: 768px) {
     .col-md-3 {
-        flex: 0 0 100% !important;
+        flex: 0 0 100% !important; /* Лейблы теперь занимают всю ширину */
         max-width: 100% !important;
     }
 }
 
 /* Исправление выпадающего списка */
 .iti__country-list {
-    color: white !important;
+    color: white !important; /* Белый текст, чтобы не сливался с фоном */
 }
 
 .iti__country-list option {
-    background: #333 !important;
-    color: white !important;
+    background: #333 !important; /* Темный фон */
+    color: white !important; /* Белый текст */
 }
 
-/* Дополнительные стили */
+/* Стили для раскрытого списка (опций) */
 .custom-select option {
-    background: #fff;
-    color: #333;
+    background: #fff; /* Фон опций */
+    color: #333; /* Цвет текста */
     padding: 10px;
     font-size: 16px;
 }
 
-.custom-select option:checked {
-    background-color: #e6e6e6;
-}
-
-/* Исправленный стиль формы */
-.form-group .form-inline {
-    flex-grow: 1;
-    width: 100%;
-}
-
-.form-group.row {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.form-group .col-md-9 {
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 100%;
-}
-
-/* Фиксированный стиль для select */
-.iti__country-list {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-    border: 1px solid #bbb !important;
-    border-radius: 10px !important;
+/* Поля ввода */
+input,
+select {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #232323;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    font-family: 'Noto Sans', sans-serif;
 }
