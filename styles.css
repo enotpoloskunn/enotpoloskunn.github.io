@@ -106,3 +106,23 @@ select {
     outline: none;
     font-family: 'Noto Sans', sans-serif;
 }
+.form-group .form-inline {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.col-md-9 {
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.form-group.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.form-group .col-md-9 {
+    padding: 0 !important;
+    margin: 0 !important;
+}
