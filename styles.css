@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap');
+
+/* Применение шрифта ко всей форме */
+.mform {
+  font-family: 'Noto Sans', sans-serif;
+}
+
 form {
     background-color: #ffffff; /* Белый фон */
     border-radius: 10px; /* Скругление углов */
@@ -9,14 +16,17 @@ form {
     flex-direction: column;
 }
 
+/* Метки всегда над полями */
 label {
     font-weight: 600;
     margin-bottom: 5px;
     color: #333;
-    text-align: left; /* Выравнивание текста меток по левому краю */
-    display: block; /* Чтобы метка была над полем ввода */
+    text-align: left !important; /* Выравнивание влево */
+    display: block; /* Блочный элемент */
+    width: 100%; /* Растягиваем на всю ширину */
 }
 
+/* Поля ввода */
 input,
 select,
 textarea {
@@ -38,7 +48,7 @@ textarea:focus {
 }
 
 button {
-    background-color: #282828; /* Измененный цвет кнопки на черный */
+    background-color: #282828; /* Черный цвет кнопки */
     color: #fff;
     padding: 10px;
     border: none;
@@ -54,85 +64,53 @@ button:hover {
     transform: scale(1.02);
 }
 
+/* Исправленное выравнивание в десктопе */
 :root {
-    --btn-primary-color-bg: #282828 !important; /* Черный фон */
-    --btn-primary-color-text: #ffffff !important; /* Белый текст */
-  --btn-primary-color-bg-hover: #353535 !important;
+    --btn-primary-color-bg: #282828 !important;
+    --btn-primary-color-text: #ffffff !important;
+    --btn-primary-color-bg-hover: #353535 !important;
 }
 
 .text-md-right {
     text-align: left !important;
 }
 
-/* Скругление углов у полей ввода */
-input,
-select,
-textarea {
-    border-radius: 20px !important;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-    border-color: #353535 !important;
-    box-shadow: 0 0 4px rgba(35, 35, 35, 0.3) !important;
-    outline: none !important;
-}
-
-.col-form-label {
-    margin-bottom: 0;
-    font-size: inherit;
-    font-weight: 500;
-    line-height: 1.1;
-
+/* Правка структуры формы для одинакового отображения */
 @media (min-width: 768px) {
-  .col-md-3 {
-        flex: 0 0 50% !important;
-        max-width: 50% !important;
+    .col-md-3 {
+        flex: 0 0 100% !important; /* Лейблы теперь занимают всю ширину */
+        max-width: 100% !important;
     }
+}
+
+/* Исправление выпадающего списка */
+.iti__country-list {
+    color: white !important; /* Белый текст, чтобы не сливался с фоном */
+}
+
+.iti__country-list option {
+    background: #333 !important; /* Темный фон */
+    color: white !important; /* Белый текст */
 }
 
 /* Стили для раскрытого списка (опций) */
 .custom-select option {
-  background: #fff; /* Фон опций */
-  color: #333; /* Цвет текста */
-  padding: 10px;
-  font-size: 16px;
-}
-
-/* Добавляем иконку стрелки вниз */
-.custom-select {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="black" d="M7 10l5 5 5-5z"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 20px;
-  padding-right: 30px; /* Отступ, чтобы не закрывалось текстом */
-}
-
-/* Устанавливаем контейнер с полем ввода в столбец */
-.field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px; /* Отступ между полями */
-}
-
-/* Стили для меток */
-label {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 5px; /* Отступ между текстом и полем */
-  color: #333; /* Цвет текста */
+    background: #fff; /* Фон опций */
+    color: #333; /* Цвет текста */
+    padding: 10px;
+    font-size: 16px;
 }
 
 /* Поля ввода */
 input,
 select {
-  width: 80%; /* Ширина 80% формы */
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #232323;
-  background-color: #ffffff;
-  font-size: 16px;
-  color: #333;
-  outline: none;
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #232323;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    font-family: 'Noto Sans', sans-serif;
 }
