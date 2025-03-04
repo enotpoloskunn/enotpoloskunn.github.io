@@ -76,7 +76,7 @@ button:hover {
 }
 
 /* Правка структуры формы для одинакового отображения */
-@media (min-width: 1000px) {
+@media (min-width: 768pxpx) {
     .col-md-3 {
         flex: 0 0 100% !important; /* Лейблы теперь занимают всю ширину */
         max-width: 100% !important;
