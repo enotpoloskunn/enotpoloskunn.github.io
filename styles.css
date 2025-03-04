@@ -114,3 +114,50 @@ select {
     outline: none;
     font-family: 'Noto Sans', sans-serif;
 }
+
+/* Стили для выпадающего списка стран */
+.iti__country-list {
+    background-color: #fff !important; /* Светлый фон */
+    color: #333 !important; /* Темный текст */
+    font-family: 'Noto Sans', sans-serif !important; /* Шрифт */
+    font-size: 16px !important;
+    border-radius: 10px !important; /* Скругление углов */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Тень */
+    border: 1px solid #ddd !important; /* Светлая граница */
+    padding: 5px 0 !important;
+}
+
+/* Стили для элементов внутри списка */
+.iti__country-list li {
+    padding: 12px 15px !important;
+    font-size: 16px !important;
+    transition: background 0.2s ease-in-out;
+}
+
+/* Исправление цвета текста */
+.iti__country-name {
+    color: #333 !important;
+}
+
+/* Стили для кода страны */
+.iti__dial-code {
+    color: #666 !important; /* Темно-серый */
+}
+
+/* Подсветка активного элемента */
+.iti__country-list li:hover {
+    background-color: #f5f5f5 !important; /* Светло-серый при наведении */
+    border-radius: 8px !important; /* Чуть скругляем */
+}
+
+/* Убираем стандартные полосы прокрутки */
+.iti__country-list::-webkit-scrollbar {
+    width: 8px;
+}
+.iti__country-list::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 4px;
+}
+.iti__country-list::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
