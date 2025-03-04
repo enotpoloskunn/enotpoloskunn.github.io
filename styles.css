@@ -144,3 +144,32 @@ select {
     padding: 0 !important;
     margin: 0 !important;
 }
+/* Стили для select */
+.custom-select {
+    background-color: #ffffff !important; /* Белый фон */
+    color: #000000 !important; /* Черный текст */
+    border: 1px solid #bbb !important;
+    border-radius: 8px !important;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Стили для выпадающих опций */
+.custom-select option {
+    background-color: #ffffff !important; /* Белый фон */
+    color: #000000 !important; /* Черный текст */
+    padding: 10px;
+}
+
+/* Стили для выделенной опции */
+.custom-select option:checked {
+    background-color: #e6e6e6 !important; /* Светло-серый фон при выборе */
+}
+
+/* Дополнительный стиль для лучшей видимости */
+.custom-select:focus {
+    border-color: #282828 !important;
+    box-shadow: 0 0 4px rgba(40, 40, 40, 0.3) !important;
+    outline: none !important;
+}
