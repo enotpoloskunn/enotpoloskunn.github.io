@@ -125,12 +125,14 @@ select {
     font-family: 'Noto Sans', sans-serif;
 }
 .form-group .form-inline {
-    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .col-md-9 {
     flex-grow: 1;
+    width: 100%;
     max-width: 100%;
 }
 
