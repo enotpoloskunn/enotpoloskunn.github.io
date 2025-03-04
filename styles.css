@@ -76,7 +76,7 @@ button:hover {
 }
 
 /* Правка структуры формы для одинакового отображения */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     .col-md-3 {
         flex: 0 0 100% !important; /* Лейблы теперь занимают всю ширину */
         max-width: 100% !important;
@@ -85,12 +85,12 @@ button:hover {
 
 /* Исправление выпадающего списка */
 .iti__country-list {
-    color: white !important; /* Белый текст, чтобы не сливался с фоном */
+    color: #282828 !important; /* Белый текст, чтобы не сливался с фоном */
 }
 
 .iti__country-list option {
     background: #333 !important; /* Темный фон */
-    color: white !important; /* Белый текст */
+    color: #282828 !important; /* Белый текст */
 }
 
 /* Поля ввода */
