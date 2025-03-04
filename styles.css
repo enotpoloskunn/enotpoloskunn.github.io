@@ -10,30 +10,26 @@ form {
     border-radius: 10px; /* Скругление углов */
     padding: 20px; /* Внутренний отступ */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12); /* Улучшенная тень */
-    max-width: 480px; /* Чуть уже */
+    max-width: 480px; /* Оптимальная ширина */
     margin: 25px auto; /* Центрирование */
     display: flex;
     flex-direction: column;
-}
-
-/* Обертка для поля ввода и кнопки */
-.input-group {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    gap: 15px; /* Добавляем расстояние между элементами */
 }
 
 /* Поле ввода */
 input,
 select,
 textarea {
-    flex-grow: 1; /* Растягивается на всю доступную ширину */
-    padding: 10px;
+    width: 100%; /* Растягивается на всю доступную ширину */
+    padding: 12px;
     border: 1px solid #bbb;
-    border-radius: 20px !important;
-    font-size: 15px;
+    border-radius: 10px;
+    font-size: 16px;
     transition: all 0.2s ease-in-out;
+    background-color: #ffffff;
+    color: #333;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 input:focus,
@@ -44,73 +40,12 @@ textarea:focus {
     outline: none;
 }
 
-/* Кнопка */
-button {
-    background-color: #282828; /* Черный цвет кнопки */
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background 0.3s ease, transform 0.2s ease;
-    margin-left: 10px; /* Добавляем отступ от поля ввода */
-}
-
-button:hover {
-    background-color: #d8d8d8;
-    transform: scale(1.02);
-}
-
-/* Исправленное выравнивание в десктопе */
-:root {
-    --btn-primary-color-bg: #282828 !important;
-    --btn-primary-color-text: #ffffff !important;
-    --btn-primary-color-bg-hover: #353535 !important;
-}
-
-.text-md-right {
-    text-align: left !important;
-}
-
-/* Правка структуры формы для одинакового отображения */
-@media (min-width: 768px) {
-    .col-md-3 {
-        flex: 0 0 100% !important; /* Лейблы теперь занимают всю ширину */
-        max-width: 100% !important;
-    }
-}
-
-/* Исправление выпадающего списка */
-.iti__country-list {
-    color: white !important; /* Белый текст, чтобы не сливался с фоном */
-}
-
-.iti__country-list option {
-    background: #333 !important; /* Темный фон */
-    color: white !important; /* Белый текст */
-}
-
-/* Поля ввода */
-input,
-select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #232323;
-    background-color: #ffffff;
-    font-size: 16px;
-    color: #333;
-    outline: none;
-    font-family: 'Noto Sans', sans-serif;
-}
 /* Стили для select */
 .custom-select {
     background-color: #ffffff !important; /* Белый фон */
     color: #282828 !important; /* Черный текст */
     border: 1px solid #bbb !important;
-    border-radius: 8px !important;
+    border-radius: 8px;
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
@@ -135,3 +70,41 @@ select {
     outline: none !important;
 }
 
+/* Выравнивание полей и кнопки */
+.input-group {
+    display: flex;
+    flex-direction: column; /* Поля идут друг за другом */
+    gap: 10px;
+}
+
+/* Кнопка */
+button {
+    background-color: #282828; /* Черный цвет кнопки */
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%; /* Кнопка теперь на всю ширину */
+}
+
+button:hover {
+    background-color: #353535;
+    transform: scale(1.02);
+}
+
+/* Правильное выравнивание меток */
+.text-md-right {
+    text-align: left !important;
+}
+
+/* Исправление для корректного отображения на мобильных устройствах */
+@media (max-width: 768px) {
+    form {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
