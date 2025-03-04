@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap');
 
-/* Общие стили */
+/* Применение шрифта ко всей форме */
 .mform {
   font-family: 'Noto Sans', sans-serif;
 }
@@ -14,35 +14,31 @@ form {
     margin: 25px auto; /* Центрирование */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Центрируем содержимое */
 }
 
-/* Метки (увеличен отступ внизу) */
+/* Метки всегда над полями */
 label {
     font-weight: 600;
-    margin-bottom: 9px; /* Было 5px, теперь 9px */
+    margin-bottom: 5px;
     color: #333;
-    text-align: left !important;
-    display: block;
-    width: 100%;
+    text-align: left !important; /* Выравнивание влево */
+    display: block; /* Блочный элемент */
+    width: 100%; /* Растягиваем на всю ширину */
 }
 
 /* Поля ввода */
 input,
 select,
 textarea {
-    width: 90%; /* Поля теперь занимают 90% ширины */
-    max-width: 100%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #bbb;
     border-radius: 20px !important;
     font-size: 15px;
     transition: all 0.2s ease-in-out;
-    display: block;
 }
 
-/* При фокусе */
 input:focus,
 select:focus,
 textarea:focus {
@@ -51,9 +47,8 @@ textarea:focus {
     outline: none;
 }
 
-/* Кнопка */
 button {
-    background-color: #282828;
+    background-color: #282828; /* Черный цвет кнопки */
     color: #fff;
     padding: 10px;
     border: none;
@@ -69,7 +64,7 @@ button:hover {
     transform: scale(1.02);
 }
 
-/* Правка структуры формы */
+/* Исправленное выравнивание в десктопе */
 :root {
     --btn-primary-color-bg: #282828 !important;
     --btn-primary-color-text: #ffffff !important;
@@ -80,59 +75,42 @@ button:hover {
     text-align: left !important;
 }
 
-/* Обеспечиваем нормальное отображение на больших экранах */
+/* Правка структуры формы для одинакового отображения */
 @media (min-width: 768px) {
     .col-md-3 {
-        flex: 0 0 100% !important;
+        flex: 0 0 100% !important; /* Лейблы теперь занимают всю ширину */
         max-width: 100% !important;
     }
 }
 
 /* Исправление выпадающего списка */
 .iti__country-list {
-    color: #333 !important;
-    background-color: #fff !important;
-    font-family: 'Noto Sans', sans-serif !important;
-    font-size: 16px !important;
-    border-radius: 10px !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-    border: 1px solid #ddd !important;
-    padding: 5px 0 !important;
+    color: white !important; /* Белый текст, чтобы не сливался с фоном */
 }
 
-/* Элементы списка */
-.iti__country-list li {
-    padding: 12px 15px !important;
-    font-size: 16px !important;
-    transition: background 0.2s ease-in-out;
+.iti__country-list option {
+    background: #333 !important; /* Темный фон */
+    color: white !important; /* Белый текст */
 }
 
-/* Исправление цвета текста */
-.iti__country-name {
-    color: #333 !important;
+/* Стили для раскрытого списка (опций) */
+.custom-select option {
+    background: #fff; /* Фон опций */
+    color: #333; /* Цвет текста */
+    padding: 10px;
+    font-size: 16px;
 }
 
-/* Код страны */
-.iti__dial-code {
-    color: #666 !important;
-}
-
-/* Подсветка активного элемента */
-.iti__country-list li:hover {
-    background-color: #f5f5f5 !important;
-    border-radius: 8px !important;
-}
-
-/* Убираем стандартные полосы прокрутки */
-.iti__country-list::-webkit-scrollbar {
-    width: 8px;
-}
-
-.iti__country-list::-webkit-scrollbar-thumb {
-    background: #bbb;
-    border-radius: 4px;
-}
-
-.iti__country-list::-webkit-scrollbar-track {
-    background: #f0f0f0;
+/* Поля ввода */
+input,
+select {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #232323;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    font-family: 'Noto Sans', sans-serif;
 }
