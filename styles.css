@@ -136,7 +136,6 @@ button:hover {
 .iti__country-list::-webkit-scrollbar-track {
     background: #f0f0f0;
 }
-
 /* Исправление выпадающего списка для стран и групп */
 .iti__country-list,
 .custom-select {
