@@ -59,8 +59,9 @@ button {
 }
 
 button:hover {
-    background-color: #f8f8f8;
+    background-color: #D8D8D8;
     transform: scale(1.02);
+	border-radius: 6px;
 }
 
 /* Исправленное выравнивание в десктопе */
