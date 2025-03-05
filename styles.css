@@ -19,7 +19,7 @@ form {
 /* Метки всегда над полями */
 label {
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     color: #333;
     text-align: left !important; /* Выравнивание влево */
     display: block; /* Блочный элемент */
@@ -76,10 +76,19 @@ button:hover {
     text-align: left !important;
 }
 
-/* Правка структуры формы для одинакового отображения */
+/* Исправление ширины полей ввода и кнопки */
 @media (min-width: 768px) {
-    .col-md-3 {
-        flex: 0 0 100% !important; /* Лейблы теперь занимают всю ширину */
+    input,
+    select,
+    textarea,
+    button {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .form-inline .form-control, 
+    .form-inline select {
+        width: 100% !important;
         max-width: 100% !important;
     }
 }
