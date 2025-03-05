@@ -85,10 +85,6 @@ button:hover {
         width: 100% !important;
         max-width: 100% !important;
     }
-    .col-md-3 {
-        flex: 0 0 100% !important; /* Лейблы теперь занимают всю ширину */
-        max-width: 100% !important;
-    }
     .form-inline .form-control, 
     .form-inline select {
         width: 100% !important;
