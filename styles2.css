@@ -6,10 +6,7 @@
 }
 
 form {
-    background-color: #ffffff; /* Белый фон */
-    border-radius: 20px; /* Скругление углов */
     padding: 20px; /* Внутренний отступ */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12); /* Улучшенная тень */
     max-width: 480px; /* Чуть уже */
     margin: 25px auto; /* Центрирование */
     display: flex;
@@ -158,6 +155,14 @@ select {
     padding: 12px 15px !important;
     font-size: 16px !important;
     transition: background 0.2s ease-in-out;
+}
+
+.text-danger {
+    color: #ffffff !important;
+}
+
+.fa-exclamation-circle.text-danger {
+    color: #ffffff !important;
 }
 
 /* Исправление цвета текста */
