@@ -164,6 +164,10 @@ select {
     color: #ffffff !important;
 }
 
+.fa-exclamation-circle.text-danger {
+    color: #ffffff !important;
+}
+
 /* Исправление цвета текста */
 .iti__country-name {
     color: #333 !important;
