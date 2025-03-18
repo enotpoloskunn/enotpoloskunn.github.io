@@ -160,6 +160,10 @@ select {
     transition: background 0.2s ease-in-out;
 }
 
+.text-danger {
+    color: #ffffff !important;
+}
+
 /* Исправление цвета текста */
 .iti__country-name {
     color: #333 !important;
