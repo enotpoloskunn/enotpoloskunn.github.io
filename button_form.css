@@ -65,6 +65,28 @@ button:hover {
   border-radius: 30px;
 }
 
+button.custom-button {
+    background-color: #282828; /* тёмный фон */
+    color: #fff; /* белый текст */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Наведение */
+button.custom-button:hover {
+    background-color: #3a3a3a;
+}
+
+/* Клик */
+button.custom-button:active {
+    transform: scale(0.97);
+}
+
 /* Исправленное выравнивание в десктопе */
 :root {
     --btn-primary-color-bg: #282828 !important;
