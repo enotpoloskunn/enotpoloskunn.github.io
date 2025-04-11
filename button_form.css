@@ -1,7 +1,29 @@
+/* Подключение шрифта Noto Sans */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap');
 
-/* Общие стили для формы */
-.mform {
+/* Стили для кнопки */
+.custom-button {
+  padding: 40px !important;
+  background-color: #282828;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-family: 'Noto Sans', sans-serif;
+  display: inline-block;
+}
+
+.custom-button:hover {
+  background-color: #d8d8d8;
+  color: #282828;
+  transform: scale(1.02);
+}
+
+/* Стили для формы */
+.mform, #mform1_iuzkysIpjgRPGK9 {
   font-family: 'Noto Sans', sans-serif;
   background-color: #ffffff;
   border-radius: 20px;
@@ -13,7 +35,8 @@
   flex-direction: column;
 }
 
-.mform label {
+/* Метки для формы */
+.mform label, #mform1_iuzkysIpjgRPGK9 label {
   font-weight: 600;
   margin-bottom: 16px;
   color: #333;
@@ -22,9 +45,9 @@
   width: 100%;
 }
 
-.mform input,
-.mform select,
-.mform textarea {
+/* Поля ввода */
+.mform input, .mform select, .mform textarea,
+#mform1_iuzkysIpjgRPGK9 input, #mform1_iuzkysIpjgRPGK9 select, #mform1_iuzkysIpjgRPGK9 textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -32,90 +55,58 @@
   border-radius: 20px !important;
   font-size: 15px;
   transition: all 0.2s ease-in-out;
-  background-color: #ffffff;
-  color: #333;
-  outline: none;
-  font-family: 'Noto Sans', sans-serif;
 }
 
-.mform input:focus,
-.mform select:focus,
-.mform textarea:focus {
+.mform input:focus, .mform select:focus, .mform textarea:focus,
+#mform1_iuzkysIpjgRPGK9 input:focus, #mform1_iuzkysIpjgRPGK9 select:focus, #mform1_iuzkysIpjgRPGK9 textarea:focus {
   border-color: #282828;
   box-shadow: 0 0 4px rgba(40, 40, 40, 0.3);
   outline: none;
 }
 
-.mform button,
-.mform .custom-button {
+/* Кнопка в форме */
+.mform button, #mform1_iuzkysIpjgRPGK9 button {
   background-color: #282828;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  width: 100%;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.mform button:hover,
-.mform .custom-button:hover {
-  background-color: #3a3a3a;
+.mform button:hover, #mform1_iuzkysIpjgRPGK9 button:hover {
+  background-color: #d8d8d8;
   transform: scale(1.02);
   border-radius: 30px;
 }
 
-.mform .custom-button:active {
-  transform: scale(0.97);
-}
-
-/* Дополнительные переменные для темы */
+/* Исправленное выравнивание в десктопе */
 :root {
   --btn-primary-color-bg: #282828 !important;
   --btn-primary-color-text: #ffffff !important;
   --btn-primary-color-bg-hover: #353535 !important;
 }
 
+/* Выравнивание текста */
 .text-md-right {
   text-align: left !important;
 }
 
-/* Медиа для адаптивности */
+/* Стили для поля ввода в более широких экранах */
 @media (min-width: 768px) {
-  .mform input,
-  .mform select,
-  .mform textarea,
-  .mform button {
+  .mform input, .mform select, .mform textarea, .mform button,
+  #mform1_iuzkysIpjgRPGK9 input, #mform1_iuzkysIpjgRPGK9 select, #mform1_iuzkysIpjgRPGK9 textarea, #mform1_iuzkysIpjgRPGK9 button {
     width: 100% !important;
     max-width: 100% !important;
   }
-
-  .mform .form-inline .form-control,
-  .mform .form-inline select {
+  .mform .form-inline .form-control, .mform .form-inline select,
+  #mform1_iuzkysIpjgRPGK9 .form-inline .form-control, #mform1_iuzkysIpjgRPGK9 .form-inline select {
     width: 100% !important;
     max-width: 100% !important;
   }
-}
-
-/* Стили для формы с классом form-inline */
-.mform .form-inline {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-  gap: 5px;
-}
-
-.mform .form-inline .form-control,
-.mform .form-inline select {
-  flex-grow: 1;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-  margin-right: 0;
-  display: block;
 }
 
 /* Стили для выпадающего списка стран */
@@ -130,42 +121,25 @@
   padding: 5px 0 !important;
 }
 
+/* Стили для элементов внутри списка */
 .iti__country-list li {
   padding: 12px 15px !important;
   font-size: 16px !important;
   transition: background 0.2s ease-in-out;
 }
 
+/* Подсветка активного элемента */
 .iti__country-list li:hover {
   background-color: #f5f5f5 !important;
   border-radius: 8px !important;
 }
 
-.iti__country-name {
-  color: #333 !important;
-}
-
-.iti__dial-code {
-  color: #666 !important;
-}
-
-.iti__country {
-  color: #000000 !important;
-  background-color: #ffffff !important;
-}
-
-.iti__country.iti__highlight {
-  background-color: #e6e6e6 !important;
+/* Стили для текста внутри списка */
+.iti__country a, .iti__country span, .iti__country div {
   color: #000000 !important;
 }
 
-.iti__country a,
-.iti__country span,
-.iti__country div {
-  color: #000000 !important;
-}
-
-/* Стилизация скроллбара в списке стран */
+/* Убираем стандартные полосы прокрутки */
 .iti__country-list::-webkit-scrollbar {
   width: 8px;
 }
@@ -179,16 +153,18 @@
   background: #f0f0f0;
 }
 
-/* Стили ошибок */
-.text-danger,
+.text-danger {
+  color: #ffffff !important;
+}
+
 .fa-exclamation-circle.text-danger {
   color: #ffffff !important;
 }
 
-/* Опции внутри кастомного select */
-.custom-select option {
-  background: #fff;
-  color: #333;
-  padding: 10px;
-  font-size: 16px;
+.iti__country-name {
+  color: #333 !important;
+}
+
+.iti__dial-code {
+  color: #666 !important;
 }
