@@ -6,27 +6,18 @@
 }
 
 [data-widget="forms_de"] {
-    min-height: 500px !important;
-    height: auto !important;
-    display: block !important;
+    min-height: 500px;
+    height: auto;
 }
-
-/* Стили для всех iframe на странице */
-iframe {
-    width: 100% !important;
-    height: 1000px !important; /* Устанавливаем высоту 1000px для всех iframe */
-    border: none !important;    /* Убираем рамку */
-}
-
 
 form {
-    background-color: #ffffff !important; /* Белый фон */
-    border-radius: 20px !important; /* Скругление углов */
-    padding: 20px !important; /* Внутренний отступ */
-    max-width: 480px !important; /* Чуть уже */
-    margin: 25px 0 !important; /* Центрирование */
-    display: flex !important;
-    flex-direction: column !important;
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 20px; /* Скругление углов */
+    padding: 20px; /* Внутренний отступ */
+    max-width: 480px; /* Чуть уже */
+    margin: 25px auto; /* Центрирование */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Метки всегда над полями */
@@ -35,47 +26,47 @@ label {
     margin-bottom: 16px;
     color: #333;
     text-align: left !important; /* Выравнивание влево */
-    display: block !important; /* Блочный элемент */
-    width: 100%;
+    display: block; /* Блочный элемент */
+    width: 100%; /* Растягиваем на всю ширину */
 }
 
 /* Поля ввода */
 input,
 select,
 textarea {
-    width: 100% !important;
-    padding: 10px !important;
-    margin-bottom: 20px !important;
-    border: 1px solid #bbb !important;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bbb;
     border-radius: 20px !important;
-    font-size: 15px !important;
-    transition: all 0.2s ease-in-out !important;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-    border-color: #282828 !important;
-    box-shadow: 0 0 4px rgba(40, 40, 40, 0.3) !important;
-    outline: none !important;
+    border-color: #282828;
+    box-shadow: 0 0 4px rgba(40, 40, 40, 0.3);
+    outline: none;
 }
 
 button {
-    background-color: #282828 !important; /* Черный цвет кнопки */
-    color: #fff !important;
-    padding: 10px !important;
-    border: none !important;
-    border-radius: 6px !important;
-    cursor: pointer !important;
-    font-size: 16px !important;
-    font-weight: bold !important;
-    transition: background 0.3s ease, transform 0.2s ease !important;
+    background-color: #282828; /* Черный цвет кнопки */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #d8d8d8 !important;
-    transform: scale(1.02) !important;
-    border-radius: 30px !important;
+    background-color: #d8d8d8;
+    transform: scale(1.02);
+  border-radius: 30px;
 }
 
 /* Исправленное выравнивание в десктопе */
@@ -105,90 +96,117 @@ button:hover {
     }
 }
 
+/* Исправление выпадающего списка */
+.iti__country-list {
+    color: white !important; /* Белый текст, чтобы не сливался с фоном */
+}
+
+.iti__country-list option {
+    background: #333 !important; /* Темный фон */
+    color: white !important; /* Белый текст */
+}
+
 /* Стили для раскрытого списка (опций) */
 .custom-select option {
-    background: #fff !important; /* Фон опций */
-    color: #333 !important; /* Цвет текста */
-    padding: 10px !important;
-    font-size: 16px !important;
+    background: #fff; /* Фон опций */
+    color: #333; /* Цвет текста */
+    padding: 10px;
+    font-size: 16px;
 }
+
 
 /* Поля ввода */
 input,
 select {
-    width: 100% !important;
-    padding: 10px !important;
-    border-radius: 8px !important;
-    border: 1px solid #232323 !important;
-    background-color: #ffffff !important;
-    font-size: 16px !important;
-    color: #333 !important;
-    outline: none !important;
-    font-family: 'Noto Sans', sans-serif !important;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #232323;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    font-family: 'Noto Sans', sans-serif;
 }
-
 .form-inline {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
-    width: 100% !important;
-    gap: 5px !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%; /* Растягиваем контейнер */
+    gap: 5px; /* Уменьшаем промежуток */
 }
 
 .form-inline .form-control, 
 .form-inline select {
-    flex-grow: 1 !important;
-    width: 100% !important;
-    max-width: 100% !important; /* Ограничиваем, чтобы элементы не сжимались */
-    min-width: 0 !important; /* Разрешаем сжатие */
-    margin-right: 0 !important; /* Убираем лишний отступ */
-    display: block !important; /* Исправляем возможные баги с inline-block */
+    flex-grow: 1;
+    width: 100%; 
+    max-width: 100%; /* Ограничиваем, чтобы элементы не сжимались */
+    min-width: 0; /* Разрешаем сжатие */
+    margin-right: 0; /* Убираем лишний отступ */
+    display: block; /* Исправляем возможные баги с inline-block */
 }
-
 /* Стили для выпадающего списка стран */
 .iti__country-list {
-    background-color: #fff !important;
-    color: #333 !important;
-    font-family: 'Noto Sans', sans-serif !important;
+    background-color: #fff !important; /* Светлый фон */
+    color: #333 !important; /* Темный текст */
+    font-family: 'Noto Sans', sans-serif !important; /* Шрифт */
     font-size: 16px !important;
-    border-radius: 10px !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-    border: 1px solid #ddd !important;
+    border-radius: 10px !important; /* Скругление углов */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Тень */
+    border: 1px solid #ddd !important; /* Светлая граница */
     padding: 5px 0 !important;
 }
 
+/* Стили для элементов внутри списка */
 .iti__country-list li {
     padding: 12px 15px !important;
     font-size: 16px !important;
-    transition: background 0.2s ease-in-out !important;
+    transition: background 0.2s ease-in-out;
 }
 
+.text-danger {
+    color: #ffffff !important;
+}
+
+.fa-exclamation-circle.text-danger {
+    color: #ffffff !important;
+}
+
+/* Исправление цвета текста */
+.iti__country-name {
+    color: #333 !important;
+}
+
+/* Стили для кода страны */
+.iti__dial-code {
+    color: #666 !important; /* Темно-серый */
+}
+
+/* Подсветка активного элемента */
 .iti__country-list li:hover {
-    background-color: #f5f5f5 !important;
-    border-radius: 8px !important;
+    background-color: #f5f5f5 !important; /* Светло-серый при наведении */
+    border-radius: 8px !important; /* Чуть скругляем */
 }
 
 /* Убираем стандартные полосы прокрутки */
 .iti__country-list::-webkit-scrollbar {
-    width: 8px !important;
+    width: 8px;
 }
-
 .iti__country-list::-webkit-scrollbar-thumb {
-    background: #bbb !important;
-    border-radius: 4px !important;
+    background: #bbb;
+    border-radius: 4px;
 }
-
 .iti__country-list::-webkit-scrollbar-track {
-    background: #f0f0f0 !important;
+    background: #f0f0f0;
 }
-
+/* Стили для элементов внутри списка */
 .iti__country {
     color: #000000 !important;
     background-color: #ffffff !important;
 }
 
 .iti__country.iti__highlight {
-    background-color: #e6e6e6 !important;
+    background-color: #e6e6e6 !important; /* Светло-серый фон при наведении */
     color: #000000 !important;
 }
 
@@ -196,6 +214,7 @@ select {
     color: #000000 !important;
 }
 
+/* Стили для текста внутри списка */
 .iti__country a, 
 .iti__country span, 
 .iti__country div {
