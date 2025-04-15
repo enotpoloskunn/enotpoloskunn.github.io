@@ -23,9 +23,8 @@ form {
     background-color: #ffffff !important; /* Белый фон */
     border-radius: 20px !important; /* Скругление углов */
     padding: 20px !important; /* Внутренний отступ */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12) !important; /* Улучшенная тень */
     max-width: 480px !important; /* Чуть уже */
-    margin: 25px auto !important; /* Центрирование */
+    margin: 25px 0 !important; /* Центрирование */
     display: flex !important;
     flex-direction: column !important;
 }
