@@ -13,9 +13,9 @@
 
 /* Стили для всех iframe на странице */
 iframe {
-    width: 100%;
-    height: 1000px;  /* Устанавливаем высоту 1000px для всех iframe */
-    border: none;    /* Убираем рамку */
+    width: 100% !important;
+    height: 1000px !important; /* Устанавливаем высоту 1000px для всех iframe */
+    border: none !important;    /* Убираем рамку */
 }
 
 
