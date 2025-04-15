@@ -5,18 +5,12 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
-.tn-atom {
-  height: auto !important;
-  min-height: 600px;
-  overflow: visible;
-}
-
 form {
     background-color: #ffffff; /* Белый фон */
     border-radius: 20px; /* Скругление углов */
     padding: 20px; /* Внутренний отступ */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12); /* Улучшенная тень */
-    max-width: 480px; /* Чуть уже */
+    max-width: 1200px; /* Чуть уже */
     margin: 25px auto; /* Центрирование */
     display: flex;
     flex-direction: column;
