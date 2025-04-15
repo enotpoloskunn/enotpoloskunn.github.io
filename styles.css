@@ -5,9 +5,11 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
-[data-widget="forms_de"] {
-    min-height: 500px;
-    height: auto;
+/* Стили для всех iframe на странице */
+iframe {
+    width: 100% !important;
+    height: 1000px !important; /* Устанавливаем высоту 1000px для всех iframe */
+    border: none !important;    /* Убираем рамку */
 }
 
 form {
