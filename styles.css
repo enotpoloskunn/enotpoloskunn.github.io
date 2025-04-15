@@ -5,6 +5,11 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
+.tn-atom {
+  width: 100% !important;
+  max-width: 600px; /* или сколько тебе нужно */
+}
+
 form {
     background-color: #ffffff; /* Белый фон */
     border-radius: 20px; /* Скругление углов */
