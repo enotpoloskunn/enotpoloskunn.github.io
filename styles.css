@@ -5,6 +5,11 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
+[data-widget="forms_de"] {
+    min-height: 500px;
+    height: auto;
+}
+
 form {
     background-color: #ffffff; /* Белый фон */
     border-radius: 20px; /* Скругление углов */
