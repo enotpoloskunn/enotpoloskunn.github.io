@@ -3,9 +3,9 @@
 
 /* Стили для кнопки */
 .custom-button {
-  padding: 20px !important;
-  background-color: #282828;
-  color: #fff;
+  padding: 12px !important;
+  background-color: #f8f8f8;
+  color: #282828;
   border: none;
   border-radius: 20px;
   font-size: 18px;
@@ -17,8 +17,8 @@
 }
 
 .custom-button:hover {
-  background-color: #f8f8f8;
-  color: #282828;
+  background-color: #282828;
+  color: #f8f8f8;
   transform: scale(1.02);
 }
 
