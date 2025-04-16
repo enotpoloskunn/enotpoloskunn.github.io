@@ -28,10 +28,16 @@
   
 }
 
-
-.mob-menu-overlay {
-  background: transparent !important;
-  pointer-events: none;
+.modalSDO {
+  background-color: rgba(0, 0, 0, 0.4); /* прозрачный чёрный */
+  backdrop-filter: blur(8px); /* блюр заднего фона */
+  -webkit-backdrop-filter: blur(8px); /* для Safari */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999; /* убедись, что он под модальным окном */
 }
 
 /* Применение шрифта ко всей форме */
