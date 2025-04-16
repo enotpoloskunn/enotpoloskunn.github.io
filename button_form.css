@@ -8,6 +8,7 @@
   color: #28210C;
   border: none;
   border-radius: 20px;
+  border: 1px solid #fff;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
@@ -20,6 +21,7 @@
   background-color: #28210C;
   color: #f8f8f8;
   transform: scale(1.02);
+  
 }
 
 body {
