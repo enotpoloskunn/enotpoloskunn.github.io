@@ -30,6 +30,26 @@ body {
     margin: 0;
     padding: 0;
 }
+.modalSDO {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3); /* Прозрачный тёмный фон */
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+}
 
 /* Применение шрифта ко всей форме */
 .mform {
