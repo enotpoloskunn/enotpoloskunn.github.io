@@ -9,6 +9,10 @@
   border: none;
   border-radius: 20px;
   border: 1px solid #fff;
+  width: auto !important;        /* Сброс ширины 100% */
+  max-width: none !important;    /* Сброс max-width 100% */
+  padding: 20px 40px;            /* 20px сверху/снизу, 40px слева/справа */
+  display: inline-block;         /* Чтобы ширина была по содержимому */
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
