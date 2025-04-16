@@ -29,7 +29,7 @@
 }
 
 .modalSDO {
-  background-color: rgba(0, 0, 0, 0.4); /* прозрачный чёрный */
+  background-color: rgba(0, 0, 0, 0.4) !important; /* прозрачный чёрный */
   backdrop-filter: blur(8px); /* блюр заднего фона */
   -webkit-backdrop-filter: blur(8px); /* для Safari */
   position: fixed;
