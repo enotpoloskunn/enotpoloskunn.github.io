@@ -9,7 +9,9 @@
   border: none;
   border-radius: 20px;
   border: 1px solid #fff;
-  width: 300px !important; /* например */
+  width: 300px !important; 
+  height: 60px;
+  line-height: 60px; /* если нужно вертикально выровнять текст */
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
