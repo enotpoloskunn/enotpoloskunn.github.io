@@ -31,149 +31,225 @@ body {
     padding: 0;
 }
 
-/* Стили для формы */
-.mform, #mform1_iuzkysIpjgRPGK9 {
+/* Применение шрифта ко всей форме */
+.mform {
   font-family: 'Noto Sans', sans-serif;
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-  max-width: 480px;
-  margin: 25px auto;
-  display: flex;
-  flex-direction: column;
 }
 
-/* Метки для формы */
-.mform label, #mform1_iuzkysIpjgRPGK9 label {
-  font-weight: 600;
-  margin-bottom: 16px;
-  color: #333;
-  text-align: left !important;
-  display: block;
-  width: 100%;
+/* Стили для всех iframe на странице */
+iframe {
+    width: 100% !important;
+    height: 1000px !important; /* Устанавливаем высоту 1000px для всех iframe */
+    border: none !important;    /* Убираем рамку */
+}
+
+form {
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 20px; /* Скругление углов */
+    padding: 20px; /* Внутренний отступ */
+    max-width: 480px; /* Чуть уже */
+    margin: 25px auto; /* Центрирование */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Метки всегда над полями */
+label {
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+    text-align: left !important; /* Выравнивание влево */
+    display: block; /* Блочный элемент */
+    width: 100%; /* Растягиваем на всю ширину */
 }
 
 /* Поля ввода */
-.mform input, .mform select, .mform textarea,
-#mform1_iuzkysIpjgRPGK9 input, #mform1_iuzkysIpjgRPGK9 select, #mform1_iuzkysIpjgRPGK9 textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #bbb;
-  border-radius: 20px !important;
-  font-size: 15px;
-  transition: all 0.2s ease-in-out;
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bbb;
+    border-radius: 20px !important;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
 }
 
-.mform input:focus, .mform select:focus, .mform textarea:focus,
-#mform1_iuzkysIpjgRPGK9 input:focus, #mform1_iuzkysIpjgRPGK9 select:focus, #mform1_iuzkysIpjgRPGK9 textarea:focus {
-  border-color: #282828;
-  box-shadow: 0 0 4px rgba(40, 40, 40, 0.3);
-  outline: none;
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #282828;
+    box-shadow: 0 0 4px rgba(40, 40, 40, 0.3);
+    outline: none;
 }
 
-/* Кнопка в форме */
-.mform button, #mform1_iuzkysIpjgRPGK9 button {
-  background-color: #282828;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
+button {
+    background-color: #282828; /* Черный цвет кнопки */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.mform button:hover, #mform1_iuzkysIpjgRPGK9 button:hover {
-  background-color: #d8d8d8;
-  transform: scale(1.02);
+button:hover {
+    background-color: #d8d8d8;
+    transform: scale(1.02);
   border-radius: 30px;
 }
 
 /* Исправленное выравнивание в десктопе */
 :root {
-  --btn-primary-color-bg: #282828 !important;
-  --btn-primary-color-text: #ffffff !important;
-  --btn-primary-color-bg-hover: #353535 !important;
+    --btn-primary-color-bg: #282828 !important;
+    --btn-primary-color-text: #ffffff !important;
+    --btn-primary-color-bg-hover: #353535 !important;
 }
 
-/* Выравнивание текста */
 .text-md-right {
-  text-align: left !important;
+    text-align: left !important;
 }
 
-/* Стили для поля ввода в более широких экранах */
+/* Исправление ширины полей ввода и кнопки */
 @media (min-width: 768px) {
-  .mform input, .mform select, .mform textarea, .mform button,
-  #mform1_iuzkysIpjgRPGK9 input, #mform1_iuzkysIpjgRPGK9 select, #mform1_iuzkysIpjgRPGK9 textarea, #mform1_iuzkysIpjgRPGK9 button {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-  .mform .form-inline .form-control, .mform .form-inline select,
-  #mform1_iuzkysIpjgRPGK9 .form-inline .form-control, #mform1_iuzkysIpjgRPGK9 .form-inline select {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
+    input,
+    select,
+    textarea,
+    button {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .form-inline .form-control, 
+    .form-inline select {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
 }
 
+/* Исправление выпадающего списка */
+.iti__country-list {
+    color: white !important; /* Белый текст, чтобы не сливался с фоном */
+}
+
+.iti__country-list option {
+    background: #333 !important; /* Темный фон */
+    color: white !important; /* Белый текст */
+}
+
+/* Стили для раскрытого списка (опций) */
+.custom-select option {
+    background: #fff; /* Фон опций */
+    color: #333; /* Цвет текста */
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+/* Поля ввода */
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #232323;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+.form-inline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%; /* Растягиваем контейнер */
+    gap: 5px; /* Уменьшаем промежуток */
+}
+
+.form-inline .form-control, 
+.form-inline select {
+    flex-grow: 1;
+    width: 100%; 
+    max-width: 100%; /* Ограничиваем, чтобы элементы не сжимались */
+    min-width: 0; /* Разрешаем сжатие */
+    margin-right: 0; /* Убираем лишний отступ */
+    display: block; /* Исправляем возможные баги с inline-block */
+}
 /* Стили для выпадающего списка стран */
 .iti__country-list {
-  background-color: #fff !important;
-  color: #333 !important;
-  font-family: 'Noto Sans', sans-serif !important;
-  font-size: 16px !important;
-  border-radius: 10px !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-  border: 1px solid #ddd !important;
-  padding: 5px 0 !important;
+    background-color: #fff !important; /* Светлый фон */
+    color: #333 !important; /* Темный текст */
+    font-family: 'Noto Sans', sans-serif !important; /* Шрифт */
+    font-size: 16px !important;
+    border-radius: 10px !important; /* Скругление углов */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Тень */
+    border: 1px solid #ddd !important; /* Светлая граница */
+    padding: 5px 0 !important;
 }
 
 /* Стили для элементов внутри списка */
 .iti__country-list li {
-  padding: 12px 15px !important;
-  font-size: 16px !important;
-  transition: background 0.2s ease-in-out;
+    padding: 12px 15px !important;
+    font-size: 16px !important;
+    transition: background 0.2s ease-in-out;
+}
+
+.text-danger {
+    color: #ffffff !important;
+}
+
+.fa-exclamation-circle.text-danger {
+    color: #ffffff !important;
+}
+
+/* Исправление цвета текста */
+.iti__country-name {
+    color: #333 !important;
+}
+
+/* Стили для кода страны */
+.iti__dial-code {
+    color: #666 !important; /* Темно-серый */
 }
 
 /* Подсветка активного элемента */
 .iti__country-list li:hover {
-  background-color: #f5f5f5 !important;
-  border-radius: 8px !important;
-}
-
-/* Стили для текста внутри списка */
-.iti__country a, .iti__country span, .iti__country div {
-  color: #000000 !important;
+    background-color: #f5f5f5 !important; /* Светло-серый при наведении */
+    border-radius: 8px !important; /* Чуть скругляем */
 }
 
 /* Убираем стандартные полосы прокрутки */
 .iti__country-list::-webkit-scrollbar {
-  width: 8px;
+    width: 8px;
 }
-
 .iti__country-list::-webkit-scrollbar-thumb {
-  background: #bbb;
-  border-radius: 4px;
+    background: #bbb;
+    border-radius: 4px;
 }
-
 .iti__country-list::-webkit-scrollbar-track {
-  background: #f0f0f0;
+    background: #f0f0f0;
+}
+/* Стили для элементов внутри списка */
+.iti__country {
+    color: #000000 !important;
+    background-color: #ffffff !important;
 }
 
-.text-danger {
-  color: #ffffff !important;
+.iti__country.iti__highlight {
+    background-color: #e6e6e6 !important; /* Светло-серый фон при наведении */
+    color: #000000 !important;
 }
 
-.fa-exclamation-circle.text-danger {
-  color: #ffffff !important;
+.iti__country_list {
+    color: #000000 !important;
 }
 
-.iti__country-name {
-  color: #333 !important;
-}
-
-.iti__dial-code {
-  color: #666 !important;
+/* Стили для текста внутри списка */
+.iti__country a, 
+.iti__country span, 
+.iti__country div {
+    color: #000000 !important;
 }
