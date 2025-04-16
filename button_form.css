@@ -5,7 +5,7 @@
 .custom-button {
   padding: 12px !important;
   background-color: #f8f8f8;
-  color: #282828;
+  color: #28210C;
   border: none;
   border-radius: 20px;
   font-size: 18px;
@@ -17,7 +17,7 @@
 }
 
 .custom-button:hover {
-  background-color: #282828;
+  background-color: #28210C;
   color: #f8f8f8;
   transform: scale(1.02);
 }
