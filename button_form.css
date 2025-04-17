@@ -24,6 +24,7 @@
   color: #f8f8f8;
   border-radius: 20px;
   transform: scale(1.02);
+}
 
 .modalSDO {
   background-color: rgba(0, 0, 0, 0.4) !important; /* прозрачный чёрный */
