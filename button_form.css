@@ -22,6 +22,7 @@
 .custom-button:hover {
   background-color: #28210C;
   color: #f8f8f8;
+  border-radius: 20px;
   transform: scale(1.02);
   
 }
