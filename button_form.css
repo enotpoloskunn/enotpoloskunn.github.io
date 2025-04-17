@@ -38,7 +38,7 @@
   z-index: 999; /* убедись, что он под модальным окном */
 }
 
-button:not(.fixed-banner-close) {
+.fixed-banner-close {
     background-color: #282828;
     color: #fff;
     padding: 10px;
