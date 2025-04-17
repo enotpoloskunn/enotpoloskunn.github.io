@@ -63,7 +63,6 @@
 }
 
 .fixed-banner-close::before {
-    content: "\00d7"; /* × символ, или замени на нужный icon-font символ */
     font-size: 24px;
     color: #333;
     line-height: 1;
