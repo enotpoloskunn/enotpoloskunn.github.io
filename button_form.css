@@ -38,7 +38,6 @@
   z-index: 999; /* убедись, что он под модальным окном */
 }
 
-
 .fixed-banner-close {
 	position: absolute;
     z-index: 100;
@@ -52,7 +51,7 @@
     opacity: 0.85;
 }
 
-.fixed-banner-close ic ic-close {
+.fixed-banner-close.ic.ic-close {
     position: absolute;
     z-index: 100;
     top: 30px;
