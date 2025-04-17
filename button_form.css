@@ -49,6 +49,8 @@
     cursor: pointer;
     display: block;
     opacity: 0.85;
+    transform: none !important;   /* Важно! отключает любое смещение */
+    top: auto !important;         /* Убирает любые top-значения */
 }
 
 .fixed-banner-close:hover {
