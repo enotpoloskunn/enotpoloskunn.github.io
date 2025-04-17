@@ -41,7 +41,7 @@
 .fixed-banner-close {
     position: fixed;
     bottom: 30px;
-    right: -800px;
+    right: 30px;
     z-index: 999;
     padding: 0;
     background: none;
