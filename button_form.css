@@ -62,12 +62,6 @@
     opacity: 1;
 }
 
-.fixed-banner-close::before {
-    font-size: 24px;
-    color: #333;
-    line-height: 1;
-}
-
 /* Применение шрифта ко всей форме */
 .mform {
   font-family: 'Noto Sans', sans-serif;
