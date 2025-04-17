@@ -41,7 +41,7 @@
 .fixed-banner-close {
     position: absolute;
     top: 50%;
-    left: 100%;              /* за правым краем баннера */
+    left: 46%;              /* за правым краем баннера */
     transform: translateY(-50%);
     margin-left: 10px;       /* отступ от баннера */
     width: 30px;
@@ -58,6 +58,7 @@
 }
 
 .fixed-banner-close:hover {
+    background-color: rgba(0, 0, 0, 0);
     opacity: 1;
 }
 
