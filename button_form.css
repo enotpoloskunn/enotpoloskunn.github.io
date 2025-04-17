@@ -46,9 +46,14 @@
     padding: 0;
     background: none;
     border: none;
-    font-size: 30px;
-    color: #000;
     cursor: pointer;
+    display: block;
+    opacity: 0.85;
+}
+
+.fixed-banner-close:hover {
+    background-color: rgba(0, 0, 0, 0); 
+    opacity: 1;
 }
 
 /* Применение шрифта ко всей форме */
