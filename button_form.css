@@ -39,10 +39,10 @@
 }
 
 .fixed-banner-close {
-    position: absolute;
+    position: fixed;
     top: 30px;
-    right: 300px;
-    z-index: 100;
+    right: -800px;
+    z-index: 999;
     padding: 0;
     background: none;
     border: none;
