@@ -50,9 +50,6 @@
     opacity: 0.85;
 }
 
-.fixed-banner {
-    position: relative;
-}
 
 .fixed-banner-close:hover {
     background-color: rgba(0, 0, 0, 0); 
