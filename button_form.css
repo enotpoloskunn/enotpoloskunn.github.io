@@ -59,6 +59,18 @@
 	line-height: 1;
 }
 
+.fixed-banner-close:hover {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 1;
+}
+
+.ic-close::before {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: inherit;
+}
+
 /* Применение шрифта ко всей форме */
 .mform {
   font-family: 'Noto Sans', sans-serif;
