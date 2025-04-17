@@ -39,15 +39,16 @@
 }
 
 .fixed-banner-close {
-    background-color: #282828;
-    color: #fff;
-    padding: 10px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 100;
+    padding: 0;
+    background: none;
     border: none;
-    border-radius: 6px;
+    font-size: 30px;
+    color: #000;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 /* Применение шрифта ко всей форме */
