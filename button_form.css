@@ -60,14 +60,16 @@
 }
 
 .fixed-banner-close:hover {
+    background-color: rgba(0, 0, 0, 0);
     opacity: 1;
 }
+
 .ic-close::before {
     content: "\e905";
-    font-family: 'icomoon' !important;
-    font-size: inherit;
     display: inline-block;
     vertical-align: middle;
+    font-family: 'icomoon' !important;
+    font-size: inherit;
     line-height: 1;
 }
 
