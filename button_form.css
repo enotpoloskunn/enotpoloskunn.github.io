@@ -126,6 +126,11 @@ div.field.checkbox[data-style="soglasie"] .custom-control-label {
     background-color: rgba(255, 0, 0, 0.1);
 }
 
+div.field.checkbox[data-style="soglasie"] .custom-control-label a::after {
+    content: "\A";         /* Перенос строки */
+    white-space: pre;      /* Чтобы \A сработал */
+}
+
 /* Поля ввода */
 input,
 select,
