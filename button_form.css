@@ -127,13 +127,6 @@ div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type *
   line-height: 1.4 !important;
 }
 
-/* Ссылка "Согласие" с нижним отступом */
-div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type a {
-  display: inline-block;
-  margin-bottom: 4px;
-  text-decoration: underline;
-}
-
 
 /* Поля ввода */
 input,
