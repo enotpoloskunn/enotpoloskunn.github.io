@@ -145,8 +145,6 @@ div.field.checkbox[data-style="soglasie"] .custom-control {
 
 /* Оборачивающий label с текстом "Согласие..." */
 div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type {
-  margin-left: 8px !important;
-  margin-top: -2px !important; /* подгонка вертикального выравнивания */
   display: block !important;
   width: auto !important;
   max-width: 90%;
