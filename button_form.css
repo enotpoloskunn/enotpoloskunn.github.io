@@ -105,7 +105,7 @@ label {
     width: 100%; /* Растягиваем на всю ширину */
 }
 
-div.field.checkbox[data-style="soglasie"] .form-check .custom-control-label {
+div.field.checkbox[data-style="soglasie"] .custom-control-label {
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
@@ -115,7 +115,7 @@ div.field.checkbox[data-style="soglasie"] .form-check .custom-control-label {
     margin-bottom: 16px;
 }
 
-div.field.checkbox[data-style="soglasie"] .form-check .custom-control-label > * {
+div.field.checkbox[data-style="soglasie"] .custom-control-label > * {
     display: block !important;
     width: 100% !important;
     line-height: 1.4;
@@ -123,7 +123,7 @@ div.field.checkbox[data-style="soglasie"] .form-check .custom-control-label > * 
 }
 
 div.field.checkbox[data-style="soglasie"] .custom-control-label {
-    background-color: rgba(0, 255, 0, 0.05); /* временно для теста */
+    background-color: rgba(255, 0, 0, 0.1);
 }
 
 /* Поля ввода */
