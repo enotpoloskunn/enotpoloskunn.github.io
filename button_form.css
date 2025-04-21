@@ -105,21 +105,32 @@ label {
     width: 100%; /* Растягиваем на всю ширину */
 }
 
+/* Обертка для поля "согласие" */
+div.field.checkbox[data-style="soglasie"] .form-check {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px; /* если нужен небольшой отступ между свитчем и текстом */
+}
+
+/* Сам текстовый label (последний внутри custom-control) */
 div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type {
     display: flex !important;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: auto; /* чтобы ширина зависела от содержимого */
+    margin: 0 !important; /* убираем отступ слева */
+    line-height: 1.4;
     font-weight: 400;
     color: #333;
-    line-height: 1.4;
-    text-align: left; /* оставить один раз */
+    text-align: left;
 }
 
+/* Ссылка "Согласие" */
 div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type a {
     display: inline-block;
-    margin-bottom: 4px;
     text-decoration: underline;
+    margin-bottom: 2px;
 }
 
 /* Поля ввода */
