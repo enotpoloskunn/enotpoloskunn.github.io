@@ -109,7 +109,7 @@ label {
 div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type {
   display: block !important;
   margin-top: -20px !important;
-  margin-left: 36px !important;
+  margin-left: 12px !important;
   width: calc(100% - 36px) !important;
   font-size: 14px;
   font-weight: 400 !important;
