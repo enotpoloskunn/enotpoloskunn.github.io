@@ -105,19 +105,19 @@ label {
     width: 100%; /* Растягиваем на всю ширину */
 }
 
-.field.checkbox[data-style="soglasie"] .custom-control-label {
+div.field.checkbox[data-style="soglasie"] .form-check .custom-control-label {
     display: flex !important;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100% !important;
     font-weight: 400;
     color: #333;
     margin-bottom: 16px;
 }
 
-.field.checkbox[data-style="soglasie"] .custom-control-label > * {
-    display: block;
-    width: 100%;
+div.field.checkbox[data-style="soglasie"] .form-check .custom-control-label > * {
+    display: block !important;
+    width: 100% !important;
     line-height: 1.4;
     text-align: left;
 }
