@@ -105,32 +105,31 @@ label {
     width: 100%; /* Растягиваем на всю ширину */
 }
 
-/* Обертка для поля "согласие" */
+/* Ставим label с текстом "Согласие" рядом со switch */
 div.field.checkbox[data-style="soglasie"] .form-check {
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
-    gap: 10px; /* если нужен небольшой отступ между свитчем и текстом */
+    gap: 0.5em; /* если хочется чуть отступ между switch и текстом */
 }
 
-/* Сам текстовый label (последний внутри custom-control) */
+/* Сам label с текстом — делаем вертикальным, убираем все отступы */
 div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type {
     display: flex !important;
     flex-direction: column;
     align-items: flex-start;
-    width: auto; /* чтобы ширина зависела от содержимого */
-    margin: 0 !important; /* убираем отступ слева */
-    line-height: 1.4;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto;
     font-weight: 400;
     color: #333;
-    text-align: left;
+    line-height: 1.2;
 }
 
-/* Ссылка "Согласие" */
+/* Перенос текста "на обработку персональных данных" на новую строку */
 div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type a {
     display: inline-block;
-    text-decoration: underline;
     margin-bottom: 2px;
+    text-decoration: underline;
 }
 
 /* Поля ввода */
