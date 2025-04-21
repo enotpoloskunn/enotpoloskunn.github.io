@@ -105,21 +105,19 @@ label {
     width: 100%; /* Растягиваем на всю ширину */
 }
 
-/* Специальный стиль ТОЛЬКО для блока "Согласие" */
+/* Подгонка текста "Согласие..." под чекбокс */
 div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  justify-content: flex-start;
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100% !important;
+  display: block !important;
+  margin-top: -20px !important;
+  margin-left: 36px !important;
+  width: calc(100% - 36px) !important;
+  font-size: 14px;
   font-weight: 400 !important;
   color: #333 !important;
   line-height: 1.4 !important;
   text-align: left !important;
-  font-size: 14px;
 }
+
 
 /* Убираем отступы и выравниваем дочерние элементы внутри label */
 div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type * {
