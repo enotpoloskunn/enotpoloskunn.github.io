@@ -122,6 +122,10 @@ div.field.checkbox[data-style="soglasie"] .form-check .custom-control-label > * 
     text-align: left;
 }
 
+div.field.checkbox[data-style="soglasie"] .custom-control-label {
+    background-color: rgba(0, 255, 0, 0.05); /* временно для теста */
+}
+
 /* Поля ввода */
 input,
 select,
