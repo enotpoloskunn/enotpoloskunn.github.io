@@ -124,6 +124,12 @@ label {
     text-align: left;
 }
 
+label.stacked-label {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 /* Поля ввода */
 input,
 select,
