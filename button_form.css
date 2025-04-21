@@ -105,36 +105,31 @@ label {
     width: 100%; /* Растягиваем на всю ширину */
 }
 
-/* Специальный стиль ТОЛЬКО для блока "Согласие" */
+/* Ставим label с текстом "Согласие" рядом со switch */
+div.field.checkbox[data-style="soglasie"] .form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5em; /* если хочется чуть отступ между switch и текстом */
+}
+
+/* Сам label с текстом — делаем вертикальным, убираем все отступы */
 div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  justify-content: flex-start;
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100% !important;
-  font-weight: 400 !important;
-  color: #333 !important;
-  line-height: 1.4 !important;
-  text-align: left !important;
-  font-size: 14px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.2;
 }
 
-/* Убираем отступы и выравниваем дочерние элементы внутри label */
-div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type * {
-  margin: 0 !important;
-  padding: 0 !important;
-  text-align: left !important;
-  line-height: 1.4 !important;
-}
-
-/* Ссылка "Согласие" с нижним отступом */
+/* Перенос текста "на обработку персональных данных" на новую строку */
 div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type a {
-  display: inline-block;
-  margin-bottom: 4px;
-  text-decoration: underline;
-  color: #337ab7; /* опционально — можно убрать или поменять */
+    display: inline-block;
+    margin-bottom: 2px;
+    text-decoration: underline;
 }
 
 /* Поля ввода */
