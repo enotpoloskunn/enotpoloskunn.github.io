@@ -95,6 +95,24 @@ form {
     flex-direction: column;
 }
 
+/* Только для чекбоксов/свитчей */
+.custom-control-label {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    color: #333;
+}
+
+.custom-control-label br {
+    display: block;
+}
+
+.custom-control-label span {
+    display: block;
+    width: 100%;
+    line-height: 1.4;
+}
+
 /* Метки всегда над полями */
 label {
     font-weight: 600;
