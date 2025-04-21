@@ -136,23 +136,28 @@ div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type a
   text-decoration: underline;
 }
 
-/* Убираем отступ между чекбоксом и текстом */
+/* Убираем отступы между чекбоксом и текстом */
 div.field.checkbox[data-style="soglasie"] .custom-control {
-  display: flex;
+  display: flex !important;
   align-items: flex-start;
-  gap: 0px !important; /* Убираем внутренний зазор */
 }
 
-/* Подгонка текста справа от чекбокса */
+/* Сброс отступов у первой метки (визуального чекбокса) */
+div.field.checkbox[data-style="soglasie"] .custom-control-label {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Подгонка второй метки с текстом */
 div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type {
-  margin-left: 4px !important;  /* Чуть-чуть отступа, чтобы не прилипало */
+  margin-left: 2px !important;  /* минимальный читаемый отступ */
   margin-top: -1px !important;
   display: block !important;
+  line-height: 1.4;
   width: auto !important;
   font-size: 14px;
-  line-height: 1.4;
+  font-weight: 400;
 }
-
 
 /* Поля ввода */
 input,
