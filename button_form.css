@@ -136,6 +136,29 @@ div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type a
   text-decoration: underline;
   color: #337ab7; /* опционально — можно убрать или поменять */
 }
+/* Поднимаем текст "Согласие..." на один уровень с чекбоксом */
+div.field.checkbox[data-style="soglasie"] .custom-control {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* расстояние между чекбоксом и текстом */
+}
+
+/* Превращаем второй label (с текстом) в inline-flex и убираем column */
+div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  line-height: 1.4;
+}
+
+/* Убираем перенос текста внутри */
+div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type a,
+div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type {
+  white-space: nowrap;
+}
 
 /* Поля ввода */
 input,
