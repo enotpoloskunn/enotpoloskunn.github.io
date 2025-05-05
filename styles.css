@@ -12,23 +12,18 @@ iframe {
     border: none !important;    /* Убираем рамку */
 }
 
-/* Сброс глобальных стилей label внутри блока soglasie */
+/* Сброс глобальных стилей только внутри .soglasie */
 .soglasie label {
-  all: unset;
-  font-size: 1rem; /* или то, что нужно */
-  color: #333;
-  font-family: 'Noto Sans', sans-serif;
-  display: inline-flex;
+  font-weight: normal !important;
+  margin-bottom: 0 !important;
+  display: inline-flex !important;
+  width: auto !important;
+  text-align: left !important;
+  vertical-align: middle !important;
   align-items: center;
   gap: 8px;
-  margin: 0;
 }
 
-.soglasie .custom-control.custom-switch {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
 form {
     background-color: #ffffff; /* Белый фон */
