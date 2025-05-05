@@ -253,3 +253,13 @@ select {
   gap: 10px;
   flex-wrap: nowrap;
 }
+
+/* Прячем второй label, который мешает выравниванию */
+.soglasie .custom-control > label:not(.custom-control-label) {
+  height: 0 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  line-height: 0 !important;
+}
