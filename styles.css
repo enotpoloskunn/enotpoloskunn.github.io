@@ -12,6 +12,24 @@ iframe {
     border: none !important;    /* Убираем рамку */
 }
 
+/* Выравнивание текста и чекбокса в строку */
+.soglasie .form-check.d-flex {
+  align-items: center; /* Вертикальное выравнивание */
+  gap: 10px; /* Отступ между чекбоксом и текстом */
+}
+
+/* Удаляем ненужные отступы у вложенных label-ов, если есть */
+.soglasie label {
+  margin-bottom: 0;
+  display: inline; /* Чтобы не было переносов */
+  width: auto;
+}
+
+/* Обеспечиваем, что иконка ошибки тоже по центру */
+.soglasie .d-inline-flex {
+  align-items: center;
+}
+
 form {
     background-color: #ffffff; /* Белый фон */
     border-radius: 20px; /* Скругление углов */
