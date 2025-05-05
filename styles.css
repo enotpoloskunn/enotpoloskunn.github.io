@@ -12,23 +12,32 @@ iframe {
     border: none !important;    /* Убираем рамку */
 }
 
-/* Выравнивание текста и чекбокса в строку */
-.soglasie .form-check.d-flex {
-  align-items: center; /* Вертикальное выравнивание */
-  gap: 10px; /* Отступ между чекбоксом и текстом */
-}
-
-/* Удаляем ненужные отступы у вложенных label-ов, если есть */
-.soglasie label {
-  margin-bottom: 0;
-  display: inline; /* Чтобы не было переносов */
-  width: auto;
-}
-
-/* Обеспечиваем, что иконка ошибки тоже по центру */
-.soglasie .d-inline-flex {
+/* Общее выравнивание: чекбокс и текст в строку */
+.soglasie .custom-control.custom-switch {
+  display: flex;
   align-items: center;
+  gap: 10px; /* Расстояние между чекбоксом и текстом */
 }
+
+/* Убираем лишние отступы у обоих label */
+.soglasie .custom-control-label,
+.soglasie .custom-control.custom-switch > label {
+  margin: 0;
+  display: inline;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Иконка ошибки выравнивается по центру с текстом */
+.soglasie .d-inline-flex.align-items-center.align-self-start {
+  align-self: center !important;
+}
+
+/* Опционально: чтобы label с текстом не занимал всю ширину */
+.soglasie .custom-control.custom-switch > label:last-of-type {
+  white-space: nowrap;
+}
+
 
 form {
     background-color: #ffffff; /* Белый фон */
