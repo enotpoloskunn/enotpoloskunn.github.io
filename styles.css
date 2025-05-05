@@ -224,12 +224,17 @@ select {
     color: #000000 !important;
 }
 
-/* Прячем второй label, который мешает выравниванию */
+/* Исправление стилей текстового label внутри .soglasie */
 .soglasie .custom-control > label:not(.custom-control-label) {
-  height: 0 !important;
-  overflow: hidden !important;
-  padding: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
   margin: 0 !important;
-  display: block !important;
-  line-height: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  gap: 8px;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  line-height: 1.4 !important;
+  text-align: left !important;
+  white-space: normal !important;
 }
