@@ -232,3 +232,24 @@ select {
 .iti__country div {
     color: #000000 !important;
 }
+
+/* FIX: сброс глобальных стилей у текстового label в .soglasie */
+.soglasie .custom-control > label:not(.custom-control-label) {
+  display: inline-flex !important;
+  align-items: center !important;
+  width: auto !important;
+  margin: 0 !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  text-align: left !important;
+  white-space: normal !important;
+  gap: 8px;
+}
+
+/* Гарантируем, что родитель выстраивает всё в строку */
+.soglasie .custom-control.custom-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
