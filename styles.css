@@ -224,8 +224,7 @@ select {
     color: #000000 !important;
 }
 
-/* Исправление стилей текстового label внутри .soglasie */
-.soglasie label:not(.custom-control-label)
+.soglasie .custom-control label + label {
   display: inline-flex !important;
   align-items: center !important;
   margin: 0 !important;
