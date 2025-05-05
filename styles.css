@@ -12,34 +12,22 @@ iframe {
     border: none !important;    /* Убираем рамку */
 }
 
-/* Исправляем отображение блока согласия */
-.soglasie .custom-control.custom-switch {
-  display: flex;
+/* Сброс глобальных стилей label внутри блока soglasie */
+.soglasie label {
+  all: unset;
+  font-size: 1rem; /* или то, что нужно */
+  color: #333;
+  font-family: 'Noto Sans', sans-serif;
+  display: inline-flex;
   align-items: center;
-  flex-wrap: nowrap;
-  gap: 10px;
-}
-
-/* Делаем оба label в одну строку */
-.soglasie .custom-control-label,
-.soglasie .custom-control.custom-switch > label {
-  display: inline;
-  width: auto;
+  gap: 8px;
   margin: 0;
 }
 
-/* Убираем display: block от глобального label */
-.soglasie label {
-  display: inline !important;
-  width: auto !important;
-  margin-bottom: 0;
-}
-
-/* Выравниваем иконку ошибки */
-.soglasie .ml-1 {
-  margin-left: 6px;
-  display: inline-flex;
+.soglasie .custom-control.custom-switch {
+  display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 form {
