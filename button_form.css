@@ -95,16 +95,6 @@ form {
     flex-direction: column;
 }
 
-/* Метки всегда над полями */
-label {
-    font-weight: 600;
-    margin-bottom: 16px;
-    color: #333;
-    text-align: left !important; /* Выравнивание влево */
-    display: block; /* Блочный элемент */
-    width: 100%; /* Растягиваем на всю ширину */
-}
-
 /* Подгонка текста "Согласие..." под чекбокс */
 div.field.checkbox[data-style="soglasie"] .custom-control > label:last-of-type {
   display: block !important;
